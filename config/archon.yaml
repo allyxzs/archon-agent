@@ -1,0 +1,22 @@
+agent:
+  name: Archon
+  version: "0.1.0"
+  role: "Orquestração, delegação, planejamento e supervisão"
+  language: "pt-BR"
+
+planning:
+  max_subtasks: 8
+  enforce_dependency_order: true
+
+delegation:
+  fallback_strategy: "best_available"
+  include_context_from_dependencies: true
+
+supervision:
+  max_retries: 2
+  min_output_length: 20
+  require_non_empty_deliverable: true
+
+synthesis:
+  include_execution_metrics: true
+  include_subtask_breakdown: true
